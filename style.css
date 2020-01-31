@@ -5,3 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #f9fafb;
+  font-family: 'Open Sans',
+    sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
