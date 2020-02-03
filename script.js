@@ -28,11 +28,15 @@ function isValidEmail(email) {
 function checkRequired(inputArr) {
   inputArr.forEach(input => {
     if (input.value.trim() === '') {
-      showError(input, `${input.id} is required`);
+      showError(input, `${getFieldName(input)} is required`);
     } else {
       showSuccess(input);
     }
   });
+}
+
+function getFieldName(input) {
+  return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
 
 // Event Listeners
