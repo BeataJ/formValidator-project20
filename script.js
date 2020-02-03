@@ -8,6 +8,8 @@ form.addEventListener('submit', function(e) {
   e.preventDefault();
 
   if (username.value === '') {
-    alert('username is required');
+    showError(username, 'Username is required');
+  } else {
+    showSuccess(username);
   }
 });
