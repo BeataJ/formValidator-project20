@@ -6,4 +6,8 @@ const password2 = document.getElementById('password2');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
+
+  if (username.value === '') {
+    alert('username is required');
+  }
 });
